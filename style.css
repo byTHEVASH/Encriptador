@@ -15,7 +15,7 @@
   }
   
   body {
-    background-image: url(/imagenes/Background.jpg);
+    background-image: url(./imagenes/Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -24,14 +24,14 @@
     width: 33px;
     height: 33px;
     background-color: transparent;
-    background-image: url(/imagenes/boton.png);
+    background-image: url(./imagenes/boton.png);
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
   }
   
   button:active {
-    background-image: url(/imagenes/Boton_presionado.png);
+    background-image: url(./imagenes/Boton_presionado.png);
     width: 33px;
     height: 33px;
   }
@@ -44,7 +44,7 @@
   }
   
   .pipboy {
-    background: url(/imagenes/pipboy.png);
+    background: url(./imagenes/pipboy.png);
     background-repeat: no-repeat;
     width: 1000px;
     height: 793px;
@@ -55,7 +55,7 @@
   }
   
   .encrypt {
-    background-image: url(/imagenes/frame_encrypt.png);
+    background-image: url(./imagenes/frame_encrypt.png);
     background-repeat: no-repeat;
     position: relative;
     width: 434px;
@@ -65,7 +65,7 @@
   }
 
 .decrypt {
-    background-image: url(/imagenes/frame_decrypt.png);
+    background-image: url(./imagenes/frame_decrypt.png);
     background-repeat: no-repeat;
     position: relative;
     width: 331px;
@@ -291,7 +291,7 @@
   
   @media screen and (max-width: 480px) {
     body {
-      background-image: url(/imagenes/Background-device.jpg);
+      background-image: url(./imagenes/Background-device.jpg);
       justify-content: center;
       background-repeat: no-repeat;
       background-size: cover;
