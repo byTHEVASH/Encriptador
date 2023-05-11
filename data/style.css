@@ -1,53 +1,49 @@
-*{
+* {
     font-family: 'Inter';
     font-style: normal;
-}
-
-textarea{
+  }
+  
+  textarea {
     background: none;
     border: none;
-    opacity: .5;
-}
-
-textarea:focus{
+    opacity: 0.5;
+  }
+  
+  textarea:focus {
     outline: none;
     opacity: 1;
-}
-
-
-body {
-    
+  }
+  
+  body {
     background-image: url(/imagenes/Background.jpg);
     background-repeat: no-repeat;
-    background-size:cover ;
-    
-    
-}
-button{
+    background-size: cover;
+  }
   
+  button {
     width: 33px;
     height: 33px;
     background-color: transparent;
     background-image: url(/imagenes/boton.png);
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     border: none;
     cursor: pointer;
-    
-}
-button:active{
+  }
+  
+  button:active {
     background-image: url(/imagenes/Boton_presionado.png);
     width: 33px;
     height: 33px;
-
-}
-.container{
+  }
+  
+  .container {
     grid-column: 50% 50%;
-    scale: .80;
+    transform: scale(0.8);
     position: absolute;
     top: 40px;
-}  
-.pipboy{
-   
+  }
+  
+  .pipboy {
     background: url(/imagenes/pipboy.png);
     background-repeat: no-repeat;
     width: 1000px;
@@ -56,66 +52,62 @@ button:active{
     top: 30px;
     position: absolute;
     filter: none;
-    
-}
-.encrypt{
+  }
+  
+  .encrypt {
     background-image: url(/imagenes/frame_encrypt.png);
     background-repeat: no-repeat;
     position: relative;
     width: 434px;
     height: 350px;
     left: 130px;
-    top:115px;
-    
-}
+    top: 115px;
+  }
 
-
-
-.decrypt{
+.decrypt {
     background-image: url(/imagenes/frame_decrypt.png);
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     position: relative;
     width: 331px;
     height: 146px;
     left: 190px;
     top: 260px;
     text-align: center;
-}
-
-.information_input{
-    padding-left: 35px ;
+  }
+  
+  .information_input {
+    padding-left: 35px;
     padding-top: 15px;
     font-style: italic;
-    opacity: .5;
+    opacity: 0.5;
     animation-name: parpadeo;
     animation-iteration-count: infinite;
     animation-duration: 3s;
-}
-@keyframes parpadeo {
-    0%{
-        opacity: .5;
+  }
+  
+  @keyframes parpadeo {
+    0% {
+      opacity: 0.5;
     }
-    25%{
-        opacity: 1;
+    25% {
+      opacity: 1;
     }
-    50%{
-        opacity: .5;
+    50% {
+      opacity: 0.5;
     }
-    75%{
-        opacity: 1;
+    75% {
+      opacity: 1;
     }
-    100%{
-        opacity: .5;
+    100% {
+      opacity: 0.5;
     }
-    
-}
-
-    
-
-.information_output{
-    opacity: .5;
-}
-.seleccion{
+  }
+  
+  .information_output {
+    opacity: 0.5;
+  }
+  
+  .seleccion {
     display: flex;
     position: absolute;
     width: 90px;
@@ -123,95 +115,98 @@ button:active{
     left: 640px;
     top: 37px;
     background-color: #47433D;
-}
-.radio{
-   position: absolute;
+  }
+  
+  .radio {
+    position: absolute;
     width: 7.98px;
     height: 4.63px;
     left: 752px;
     top: 600px;
-}
-.rad{
-    
+  }
+  
+  .rad {
     position: relative;
     width: 45px;
     height: 2px;
     left: 760px;
     top: 243px;
-    transform-origin:  left center;
+    transform-origin: left center;
     animation: rotate 10s infinite alternate-reverse;
-   
-}
-@keyframes rotate {
+  }
+  
+  @keyframes rotate {
     0% {
       transform: rotate(-90deg);
     }
-    20%{
-        transform: rotate(-75deg);
+    20% {
+      transform: rotate(-75deg);
     }
-    50%{
-        transform: rotate(0deg);
+    50% {
+      transform: rotate(0deg);
     }
-    55%{
-        transform: rotate(-35deg);
-        
+    55% {
+      transform: rotate(-35deg);
     }
-    60%{
-        transform: rotate(-40deg);
+    60% {
+      transform: rotate(-40deg);
     }
-    80%{
-        transform: rotate(75deg);
+    80% {
+      transform: rotate(75deg);
     }
-    90%{
-        transform: rotate(65deg);
+    90% {
+      transform: rotate(65deg);
     }
     100% {
       transform: rotate(-30deg);
     }
   }
-.radio{
-    left:925px;
-    transform: translateX(-25%);animation: mover 3s infinite alternate-reverse;
-    
-}
-
-@keyframes mover {
-    0%{
-        top: 470px
+  
+  .radio {
+    left: 925px;
+    transform: translateX(-25%);
+    animation: mover 3s infinite alternate-reverse;
+  }
+  
+  @keyframes mover {
+    0% {
+      top: 470px;
     }
     100% {
       top: 550px;
     }
   }
 
-.apuntador{
+  .apuntador {
     padding-bottom: 25px;
-}
-
-.info_encrypt{
+  }
+  
+  .info_encrypt {
     padding-bottom: 25px;
-}
-.info_copy{
+  }
+  
+  .info_copy {
     padding-left: 10px;
-}
-.info_decrypt{
-    padding-top:30px ;
-}
-.btn_info{
+  }
+  
+  .info_decrypt {
+    padding-top: 30px;
+  }
+  
+  .btn_info {
     padding-top: 11px;
-    padding-right: 5px
-
-}
-
-.botonera{
+    padding-right: 5px;
+  }
+  
+  .botonera {
     width: 40px;
     height: 120px;
-    display: flex ;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;   
-}    
-
-.text-area{
+    justify-content: space-between;
+  }
+  
+  .text-area {
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
@@ -223,15 +218,14 @@ button:active{
     resize: vertical;
     color: #1BFF80;
     border: none;
-   
     text-transform: lowercase;
-}
-textarea::placeholder {
-    color:#1BFF80;
-   
-    
-}
-.mensaje{
+  }
+  
+  textarea::placeholder {
+    color: #1BFF80;
+  }
+  
+  .mensaje {
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
@@ -239,84 +233,90 @@ textarea::placeholder {
     width: 336px;
     height: 85px;
     text-align: center;
-
-}
-.rightBanner{  
+  }
+  
+  .rightBanner {
     width: 400px;
     height: 710px;
     position: absolute;
-    right:25px;
+    right: 25px;
     border-radius: 25px;
     overflow: hidden;
-}
-.rightBanner::before{
-      content: "";
-      position: absolute;
-      width: 400px;
-      height: 710px;
-      backdrop-filter: blur(30px);
-      background-color: rgba(209, 192, 192, 0.5);
-      z-index: -10;
-     
-}
-.contenido{
-    color:rgba(0, 0, 0, 0.685);
+  }
+  
+  .rightBanner::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 710px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(209, 192, 192, 0.5);
+    z-index: -10;
+  }
+.contenido {
+    color: rgba(0, 0, 0, 0.685);
     text-align: center;
     position: relative;
     z-index: 10;
     padding: 20px;
     font-size: 25px;
     text-shadow: 2px 2px rgba(99, 88, 88, 0.5);
-}
-.info p{
+  }
+  
+  .info p {
     color: rgba(0, 0, 0, 0.658);
-}
-.info img{
+  }
+  
+  .info img {
     border: 2px solid #ffcc00;
     border-radius: 10px;
-}      
-p{
+  }
+  
+  p {
     color: #1BFF80;
-}
-h1{
+  }
+  
+  h1 {
     color: #ffcc00;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.363);
-}
-.banner{
+  }
+  
+  .banner {
     position: absolute;
     background-color: rgba(85, 90, 112, 0.562);
     backdrop-filter: blur(2px);
     padding: 5px;
     border-radius: 10px;
-}
-@media screen and (max-width:480px){
-    body{
-        background-image: url(/imagenes/Background-device.jpg);
-        justify-content: center;
-        background-repeat: no-repeat;
-        background-size:cover ;
-       
-    }
-
-    .banner{
-        scale: .8;
+  }
+  
+  @media screen and (max-width: 480px) {
+    body {
+      background-image: url(/imagenes/Background-device.jpg);
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   
-    .container{
-        scale: .4;
-        left: -25px;
+    .banner {
+      transform: scale(.8);
     }
-    .rightBanner{
-        top: 300px;
-        position: absolute;
-        justify-content: center;
-        scale: .6;
-        width: auto;
-        right: 0px;
-
+  
+    .container {
+      transform: scale(.4);
+      left: -25px;
     }
-    h1{
-        color: #4d40c28a;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.363);
+  
+    .rightBanner {
+      top: 300px;
+      position: absolute;
+      justify-content: center;
+      transform: scale(.6);
+      width: auto;
+      right: 0px;
+    }
+  
+    h1 {
+      color: #4d40c28a;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.363);
     }
 }
